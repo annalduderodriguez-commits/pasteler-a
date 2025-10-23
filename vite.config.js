@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/dulzura-pastel/", // 👈 asegúrate que este nombre sea igual al del repo
+  base: "/pasteler-a/", // 👈 DEBE coincidir con tu repo en GitHub
 })
