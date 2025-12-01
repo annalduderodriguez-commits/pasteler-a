@@ -6,12 +6,13 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCAdFUPc_GHxCX-a8ecDRFFe_XRYH9-s0E",
-  authDomain: "chicas-tec-am.firebaseapp.com",
-  projectId: "chicas-tec-am",
-  storageBucket: "chicas-tec-am.firebasestorage.app",
-  messagingSenderId: "85027786061",
-  appId: "1:85027786061:web:7102a4ace730835c5cfb04"
+  apiKey: "AIzaSyDXgbB3yK7aTWuFzBO55ibkU79JQfBPO9E",
+  authDomain: "formulario-29ea2.firebaseapp.com",
+  projectId: "formulario-29ea2",
+  storageBucket: "formulario-29ea2.firebasestorage.app",
+  messagingSenderId: "108395361850",
+  appId: "1:108395361850:web:7f4b5e853ad3def5042703",
+  measurementId: "G-RRH0Y61QRL"
 };
 
 const app = initializeApp(firebaseConfig);
