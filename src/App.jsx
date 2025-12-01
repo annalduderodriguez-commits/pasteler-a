@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './componentes/Header';
-import Bienvenida from './componentes/bienvenida';
+import Bienvenida from './componentes/Bienvenida'
 import SobreNosotros from './componentes/sobreNosotros';
-import Catalogo from './componentes/catalogo';
-import Contacto from './componentes/contacto';
-import Footer from './componentes/footer';
+import Catalogo from './componentes/Catalogo'
+import Contacto from './componentes/Contacto'
+import Footer from './componentes/Footer'
 import Carrito from './componentes/Carrito';
 import { CartProvider } from './componentes/CartContext';
 import RegistrarCuenta from './componentes/RegistrarCuenta';
