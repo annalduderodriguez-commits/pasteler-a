@@ -205,7 +205,7 @@ function Comunidad() {
     if (cargando) return <p className="text-center mt-10">Cargando...</p>
 
     return (
-        <div className="p-8 max-w-3xl mx-auto">
+        <div className="mt-25 p-8 max-w-3xl mx-auto">
             {/* perfil */}
             <div className="text-center mb-8">
                 <img
@@ -241,7 +241,7 @@ function Comunidad() {
                 className="border p-2 rounded w-full mb-3"
             />
             <button
-                className="bg-blue-600 text-white px-4 py-2 rounded w-full mb-6"
+                className="bg-rose-400 text-white px-4 py-2 rounded w-full mb-6"
                 onClick={actualizarPerfil}
             >
                 Guardar cambios
@@ -258,7 +258,7 @@ function Comunidad() {
                 className="w-full border p-3 rounded mb-3"
             />
             <button
-                className="bg-green-600 text-white px-4 py-2 rounded w-full mb-6"
+                className="bg-rose-400 text-white px-4 py-2 rounded w-full mb-6"
                 onClick={crearPost}
             >
                 Publicar
@@ -430,7 +430,7 @@ function Comunidad() {
                                 />
 
                                 <button
-                                    className="bg-green-600 text-white px-3 py-1 rounded mt-2"
+                                    className="bg-rose-500 text-white px-3 py-1 rounded mt-2"
                                     onClick={() => agregarComentario(post.id)}
                                 >
                                     Comentar
@@ -444,4 +444,4 @@ function Comunidad() {
     )
 }
 
-export default Comunidad
+export default Comunidad;

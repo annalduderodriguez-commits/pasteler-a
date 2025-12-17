@@ -30,6 +30,9 @@ function NavbarUsuario() {
           <Link to="/contacto" className="hover:text-pink-900 transition-colors duration-200">
             Contacto
           </Link>
+          <Link to="/comunidad" className="hover:text-pink-900 transition-colors duration-200">
+            Comunidad
+          </Link>
         <button onClick={cerrarSesion}>Cerrar Sesion</button>
 
           

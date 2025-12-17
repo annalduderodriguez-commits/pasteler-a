@@ -25,7 +25,7 @@ function Catalogo() {
       precio: 3.9,
     },
     {
-      nombre: "Tiramisu ",
+      nombre: "Tiramisu",
       imagen: "https://www.cookingclassy.com/wp-content/uploads/2022/08/tiramisu-17-1024x1536.jpg",
       precio: 5.9,
     },
@@ -37,27 +37,36 @@ function Catalogo() {
   ];
 
   return (
-    <section id="catalogo" className="bg-white py-16 scroll-mt-24">
-      <h2 className="text-center text-3xl font-bold text-pink-500 mb-10">
-        Nuestros Postres Favoritos
+    <section id="catalogo" className="mt-25 bg-gradient-to-b from-pink-50 to-white py-20 scroll-mt-24">
+      <h2 className="text-center text-4xl font-extrabold text-pink-600 mb-12">
+        🍩 Nuestros Postres Favoritos 🍰
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto px-6">
         {postres.map((p, i) => (
           <div
             key={i}
-            className="bg-pink-50 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
+            className="group rounded-2xl shadow-lg bg-white  overflow-hidden transform transition hover:-translate-y-2 hover:shadow-2xl"
           >
-            <img
-              src={p.imagen}
-              alt={p.nombre}
-              className="w-full h-60 object-cover rounded-t-2xl"
-            />
-            <div className="p-5 text-center">
-              <h3 className="text-xl font-semibold text-pink-600">{p.nombre}</h3>
-              <p className="text-gray-500">S/ {p.precio.toFixed(2)}</p>
+            {/* Imagen */}
+            <div className="relative">
+              <img
+                src={p.imagen}
+                alt={p.nombre}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <span className="absolute top-4 right-4 bg-pink-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow-md">
+                S/ {p.precio.toFixed(2)}
+              </span>
+            </div>
+
+            {/* Info */}
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-bold text-pink-600 mb-2">{p.nombre}</h3>
+              <p className="text-gray-500 mb-4">Delicia artesanal hecha con amor 💖</p>
               <button
                 onClick={() => addToCart(p)}
-                className="mt-4 px-4 py-2 bg-pink-400 hover:bg-pink-500 text-white rounded-xl transition"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-md transition-transform transform hover:scale-105"
               >
                 🛒 Comprar
               </button>
